@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.kirupa.com/html5/examples/falling_snow2.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Falling Snow Example | KIRUPA</title>
+<style>
+    body {
+      background-color: #1A243F;
+      padding: 30px;
+      margin: 0px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-family: sans-serif;
+      background-color: #0D1221;
+      padding: 15px;
+      color: #FFF;
+      margin: 0px;
+    }
+
+    p,
+    ol {
+      font-family: sans-serif;
+      font-size: 24px;
+      color: #EEE;
+    }
+
+    li {
+      margin-bottom: 24px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body marginwidth="0" marginheight="0">
+<div id="content">
+<h1>My wishlist:</h1>
+<ol>
+<li>A pony</li>
+<li>Proof that wooly mammoths existed in the time of the railroads</li>
+<li>Recipe for the perfect bubble tea</li>
+<li>Timeframe for the REAL Matrix sequels</li>
+<li>Coal. Lots and lots of coal so that I can sell it to power plants</li>
+</ol>
+</div>
+
+<style>
+    #snowflakeContainer {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      display: none;
+    }
+
+    .snowflake {
+      position: fixed;
+      background-color: #FFFFFF;
+      user-select: none;
+      z-index: 1000;
+      pointer-events: none;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+    }
+  </style>
+<div id="snowflakeContainer" style="display: block;">
+
+<span class="snowflake" style="opacity: 0.326117; transform: translate3d(204px, 424px, 0px) scale(0.957747, 0.957747);"></span><span class="snowflake" style="opacity: 0.0674853; transform: translate3d(333px, 130px, 0px) scale(0.981084, 0.981084);"></span><span class="snowflake" style="opacity: 0.170368; transform: translate3d(447px, 151px, 0px) scale(0.784086, 0.784086);"></span><span class="snowflake" style="opacity: 0.160416; transform: translate3d(209px, 153px, 0px) scale(0.952489, 0.952489);"></span><span class="snowflake" style="opacity: 0.141549; transform: translate3d(-134px, 93px, 0px) scale(0.775295, 0.775295);"></span><span class="snowflake" style="opacity: 0.351497; transform: translate3d(376px, 403px, 0px) scale(0.98279, 0.98279);"></span><span class="snowflake" style="opacity: 0.0456994; transform: translate3d(276px, 169px, 0px) scale(0.998838, 0.998838);"></span><span class="snowflake" style="opacity: 0.240315; transform: translate3d(538px, 153px, 0px) scale(0.688126, 0.688126);"></span><span class="snowflake" style="opacity: 0.300237; transform: translate3d(-110px, 153px, 0px) scale(0.514905, 0.514905);"></span><span class="snowflake" style="opacity: 0.132503; transform: translate3d(281px, 272px, 0px) scale(0.738944, 0.738944);"></span><span class="snowflake" style="opacity: 0.102415; transform: translate3d(211px, 269px, 0px) scale(0.901163, 0.901163);"></span><span class="snowflake" style="opacity: 0.0914207; transform: translate3d(301px, 356px, 0px) scale(0.61917, 0.61917);"></span><span class="snowflake" style="opacity: 0.336031; transform: translate3d(89px, 206px, 0px) scale(0.59435, 0.59435);"></span><span class="snowflake" style="opacity: 0.0919851; transform: translate3d(407px, 276px, 0px) scale(0.916786, 0.916786);"></span><span class="snowflake" style="opacity: 0.159738; transform: translate3d(208px, -6px, 0px) scale(0.716216, 0.716216);"></span><span class="snowflake" style="opacity: 0.23433; transform: translate3d(595px, -48px, 0px) scale(0.757347, 0.757347);"></span><span class="snowflake" style="opacity: 0.175088; transform: translate3d(397px, 282px, 0px) scale(0.831955, 0.831955);"></span><span class="snowflake" style="opacity: 0.0828112; transform: translate3d(340px, 110px, 0px) scale(0.997635, 0.997635);"></span><span class="snowflake" style="opacity: 0.2522; transform: translate3d(665px, 313px, 0px) scale(0.767091, 0.767091);"></span><span class="snowflake" style="opacity: 0.35944; transform: translate3d(199px, 117px, 0px) scale(0.683976, 0.683976);"></span><span class="snowflake" style="opacity: 0.195872; transform: translate3d(411px, 329px, 0px) scale(0.853321, 0.853321);"></span><span class="snowflake" style="opacity: 0.294678; transform: translate3d(539px, 65px, 0px) scale(0.765081, 0.765081);"></span><span class="snowflake" style="opacity: 0.216023; transform: translate3d(-161px, 214px, 0px) scale(0.716697, 0.716697);"></span><span class="snowflake" style="opacity: 0.334005; transform: translate3d(-31px, 325px, 0px) scale(0.990371, 0.990371);"></span><span class="snowflake" style="opacity: 0.335847; transform: translate3d(333px, 336px, 0px) scale(0.817429, 0.817429);"></span><span class="snowflake" style="opacity: 0.191103; transform: translate3d(250px, 38px, 0px) scale(0.899294, 0.899294);"></span><span class="snowflake" style="opacity: 0.335224; transform: translate3d(93px, 197px, 0px) scale(0.94694, 0.94694);"></span><span class="snowflake" style="opacity: 0.246741; transform: translate3d(220px, 129px, 0px) scale(0.786798, 0.786798);"></span><span class="snowflake" style="opacity: 0.107638; transform: translate3d(469px, 334px, 0px) scale(0.942156, 0.942156);"></span><span class="snowflake" style="opacity: 0.298688; transform: translate3d(376px, 210px, 0px) scale(0.81447, 0.81447);"></span><span class="snowflake" style="opacity: 0.329513; transform: translate3d(85px, 346px, 0px) scale(0.891929, 0.891929);"></span><span class="snowflake" style="opacity: 0.192209; transform: translate3d(153px, 328px, 0px) scale(0.963497, 0.963497);"></span><span class="snowflake" style="opacity: 0.344164; transform: translate3d(477px, 387px, 0px) scale(0.861683, 0.861683);"></span><span class="snowflake" style="opacity: 0.306083; transform: translate3d(446px, 320px, 0px) scale(0.706391, 0.706391);"></span><span class="snowflake" style="opacity: 0.277118; transform: translate3d(85px, 410px, 0px) scale(0.58521, 0.58521);"></span><span class="snowflake" style="opacity: 0.16115; transform: translate3d(199px, 137px, 0px) scale(0.812606, 0.812606);"></span><span class="snowflake" style="opacity: 0.192231; transform: translate3d(-77px, 200px, 0px) scale(0.982124, 0.982124);"></span><span class="snowflake" style="opacity: 0.276023; transform: translate3d(509px, -43px, 0px) scale(0.976158, 0.976158);"></span><span class="snowflake" style="opacity: 0.291681; transform: translate3d(56px, 28px, 0px) scale(0.737444, 0.737444);"></span><span class="snowflake" style="opacity: 0.290657; transform: translate3d(497px, 7px, 0px) scale(0.915773, 0.915773);"></span><span class="snowflake" style="opacity: 0.246251; transform: translate3d(716px, 12px, 0px) scale(0.509765, 0.509765);"></span><span class="snowflake" style="opacity: 0.0679782; transform: translate3d(270px, 194px, 0px) scale(0.777037, 0.777037);"></span><span class="snowflake" style="opacity: 0.0810963; transform: translate3d(95px, 176px, 0px) scale(0.880434, 0.880434);"></span><span class="snowflake" style="opacity: 0.243547; transform: translate3d(231px, 301px, 0px) scale(0.592055, 0.592055);"></span><span class="snowflake" style="opacity: 0.285009; transform: translate3d(529px, 485px, 0px) scale(0.666021, 0.666021);"></span><span class="snowflake" style="opacity: 0.356912; transform: translate3d(568px, 118px, 0px) scale(0.943579, 0.943579);"></span><span class="snowflake" style="opacity: 0.364605; transform: translate3d(512px, 272px, 0px) scale(0.791522, 0.791522);"></span><span class="snowflake" style="opacity: 0.255287; transform: translate3d(501px, 175px, 0px) scale(0.993338, 0.993338);"></span><span class="snowflake" style="opacity: 0.112612; transform: translate3d(746px, 468px, 0px) scale(0.792154, 0.792154);"></span><span class="snowflake" style="opacity: 0.340112; transform: translate3d(172px, 150px, 0px) scale(0.998761, 0.998761);"></span></div>
+<script>
+    // Array to store our Snowflake objects
+    var snowflakes = [];
+
+    // Global variables to store our browser's window size
+    var browserWidth;
+    var browserHeight;
+
+    // Specify the number of snowflakes you want visible
+    var numberOfSnowflakes = 50;
+
+    // Flag to reset the position of the snowflakes
+    var resetPosition = false;
+
+    // Handle accessibility
+    var enableAnimations = false;
+    var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
+
+    // Handle animation accessibility preferences 
+    function setAccessibilityState() {
+      if (reduceMotionQuery.matches) {
+        enableAnimations = false;
+      } else { 
+        enableAnimations = true;
+      }
+    }
+    setAccessibilityState();
+
+    reduceMotionQuery.addListener(setAccessibilityState);
+
+    //
+    // It all starts here...
+    //
+    function setup() {
+      if (enableAnimations) {
+        window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
+        window.addEventListener("resize", setResetFlag, false);
+      }
+    }
+    setup();
+
+    //
+    // Constructor for our Snowflake object
+    //
+    function Snowflake(element, speed, xPos, yPos) {
+      // set initial snowflake properties
+      this.element = element;
+      this.speed = speed;
+      this.xPos = xPos;
+      this.yPos = yPos;
+      this.scale = 1;
+
+      // declare variables used for snowflake's motion
+      this.counter = 0;
+      this.sign = Math.random() < 0.5 ? 1 : -1;
+
+      // setting an initial opacity and size for our snowflake
+      this.element.style.opacity = (.1 + Math.random()) / 3;
+    }
+
+    //
+    // The function responsible for actually moving our snowflake
+    //
+    Snowflake.prototype.update = function () {
+      // using some trigonometry to determine our x and y position
+      this.counter += this.speed / 5000;
+      this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+      this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+      this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
+
+      // setting our snowflake's position and size
+      setTransform(Math.round(this.xPos), 
+                   Math.round(this.yPos), 
+                   this.scale, 
+                   this.element);
+
+      // if snowflake goes below the browser window, move it back to the top
+      if (this.yPos > browserHeight) {
+        this.yPos = -50;
+      }
+    }
+
+    //
+    // A performant way to set your snowflake's position
+    //
+    function setTransform(xPos, yPos, scale, el) {
+      el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
+    }
+
+    //
+    // The function responsible for creating the snowflake
+    //
+    function generateSnowflakes() {
+
+      // get our snowflake element from the DOM and store it
+      var originalSnowflake = document.querySelector(".snowflake");
+
+      // access our snowflake element's parent container
+      var snowflakeContainer = originalSnowflake.parentNode;
+      snowflakeContainer.style.display = "block";
+
+      // get our browser's size
+      browserWidth = document.documentElement.clientWidth;
+      browserHeight = document.documentElement.clientHeight;
+
+      // create each individual snowflake
+      for (var i = 0; i < numberOfSnowflakes; i++) {
+
+        // clone our original snowflake and add it to snowflakeContainer
+        var snowflakeClone = originalSnowflake.cloneNode(true);
+        snowflakeContainer.appendChild(snowflakeClone);
+
+        // set our snowflake's initial position and related properties
+        var initialXPos = getPosition(50, browserWidth);
+        var initialYPos = getPosition(50, browserHeight);
+        var speed = 5 + Math.random() * 40;
+
+        // create our Snowflake object
+        var snowflakeObject = new Snowflake(snowflakeClone,
+          speed,
+          initialXPos,
+          initialYPos);
+        snowflakes.push(snowflakeObject);
+      }
+
+      // remove the original snowflake because we no longer need it visible
+      snowflakeContainer.removeChild(originalSnowflake);
+
+      moveSnowflakes();
+    }
+
+    //
+    // Responsible for moving each snowflake by calling its update function
+    //
+    function moveSnowflakes() {
+
+      if (enableAnimations) {
+        for (var i = 0; i < snowflakes.length; i++) {
+          var snowflake = snowflakes[i];
+          snowflake.update();
+        }      
+      }
+
+      // Reset the position of all the snowflakes to a new value
+      if (resetPosition) {
+        browserWidth = document.documentElement.clientWidth;
+        browserHeight = document.documentElement.clientHeight;
+
+        for (var i = 0; i < snowflakes.length; i++) {
+          var snowflake = snowflakes[i];
+
+          snowflake.xPos = getPosition(50, browserWidth);
+          snowflake.yPos = getPosition(50, browserHeight);
+        }
+
+        resetPosition = false;
+      }
+
+      requestAnimationFrame(moveSnowflakes);
+    }
+
+    //
+    // This function returns a number between (maximum - offset) and (maximum + offset)
+    //
+    function getPosition(offset, size) {
+      return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+    }
+
+    //
+    // Trigger a reset of all the snowflakes' positions
+    //
+    function setResetFlag(e) {
+      resetPosition = true;
+    }
+  </script>
+
+</body></html>
