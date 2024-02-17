@@ -7334,7 +7334,7 @@ a.credit {
             right: 0;
             background: rgba(256, 256, 256, 0.7);
             transition: all 1.4s;
-            visibility: visible;
+            visibility: hidden;
             opacity: 0;
         }
  
